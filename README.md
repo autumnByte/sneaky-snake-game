@@ -1,4 +1,4 @@
-# 🐍 Sneaky Snake Game (Customized Version)
+# 🐍 Sneaky Snake Game 
 
 An interactive **Snake Game** built with **HTML, CSS, and JavaScript** — enhanced with a custom UI, a **Play Game button**, and a **clean centered layout**.  
 This project was created as part of a web development assignment to demonstrate skills learned during the internship.
@@ -29,7 +29,7 @@ This project was created as part of a web development assignment to demonstrate 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/autumnByte/sneaky-snake-custom.git
+   git clone (https://github.com/autumnByte/sneaky-snake-game)
 2. Open the folder:
 ```bash
 Copy code
@@ -41,7 +41,7 @@ That’s it — the game runs locally, no server setup required!
 
 ## 🌐 Live Demo
 Play it online :
-👉 https://autumnByte.github.io/sneaky-snake-custom
+👉 https://autumnbyte.github.io/sneaky-snake-game/
 
 ## 💡 Future Improvements
 - Add mobile touch controls
