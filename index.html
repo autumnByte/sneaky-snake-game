@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaky Snake Game</title>
+    <link rel="stylesheet" href="statics/css/style.css">
+    <link rel="icon" href="assets/images/icon/favicon.png" type="image/png">
+</head>
+<body>
+    <!-- Hero Section -->
+<header id="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title">🐍 Sneaky Snake</h1>
+    <p class="hero-subtitle">Slither, Snack, and Survive in this addictive retro-style game!</p>
+    <button id="play-button" class="hero-play-btn">Play Game</button>
+  </div>
+</header>
+    <section id="main-section">
+        <div id="game-container">
+            <canvas id="gameCanvas"></canvas>
+        </div>
+        <div id="button-container">
+            <button id="new-game-btn" onclick="location.reload()">New Game</button>
+            <button id="toggle-bg-btn" onclick="toggleBackground()">Toggle Background</button>
+            <button id="pause-btn" onclick="togglePause()">Pause/Resume Game</button>
+            <button id="snake-color-btn" onclick="changeSnakeColor()">Change Snake Color</button>
+            <button id="food-color-btn" onclick="changeFoodColor()">Change Food Color</button>
+            <button id="demo-btn" onclick="startDemo()">Run Snake Demo</button>
+            <div id="demo-speed-container" style="display: none;">
+                <label for="demo-speed">Demo Speed:</label>
+                <input id="demo-speed" type="number" value="100" min="30" max="300" step="50" onchange="updateDemoSpeed()">
+            </div>
+        </div>
+    </section>
+
+    <div id="score-container">
+        <div id="score">Score: 0</div>
+        <div id="level">Level: 1</div>
+    </div>
+
+    <div class="popup-message"></div>
+
+    <div id="demo-popup">
+        <img src="assets/images/demo/demo-image.webp" alt="Snake Demo">
+        <button onclick="restartDemo()">Run Demo Again</button>
+        <button onclick="closeDemoPopup()">Play Game</button>
+    </div>
+    <footer class="footer">
+  <p>🎮 Sneaky Snake Game </p>
+  <p>Made with ❤️ using HTML, CSS, and JavaScript</p>
+</footer>
+
+    <script src="statics/js/snakegame.js"></script>
+    <script src="statics/js/snake-demo.js"></script>
+    <script src="statics/js/high-scores.js"></script>
+</body>
+</html>
